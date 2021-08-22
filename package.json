@@ -33,6 +33,7 @@
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
     "react_ujs": "^2.6.1",
+    "remixicon": "^2.5.0",
     "tailwindcss": "1.9.6",
     "webpack": "^4.46.0",
     "webpack-cli": "^3.3.12"
