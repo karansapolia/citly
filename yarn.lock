@@ -1474,6 +1474,13 @@ autoprefixer@^9.4.5, autoprefixer@^9.6.1:
     postcss "^7.0.32"
     postcss-value-parser "^4.1.0"
 
+axios@^0.21.1:
+  version "0.21.1"
+  resolved "https://registry.yarnpkg.com/axios/-/axios-0.21.1.tgz#22563481962f4d6bde9a76d516ef0e5d3c09b2b8"
+  integrity sha512-dKQiRHxGD9PPRIUNIWvZhPTPpl1rf/OxTYKsqKUDjBwYylTvV7SjSHJb9ratfyzM6wCdLCOYLzs73qpg5c4iGA==
+  dependencies:
+    follow-redirects "^1.10.0"
+
 babel-eslint@^10.1.0:
   version "10.1.0"
   resolved "https://registry.yarnpkg.com/babel-eslint/-/babel-eslint-10.1.0.tgz#6968e568a910b78fb3779cdd8b6ac2f479943232"
@@ -1502,6 +1509,11 @@ babel-plugin-dynamic-import-node@^2.3.3:
   integrity sha512-jZVI+s9Zg3IqA/kdi0i6UDCybUI3aSBLnglhYbSSjKlV7yF1F/5LWv8MakQmvYpnbJDS6fcBL2KzHSxNCMtWSQ==
   dependencies:
     object.assign "^4.1.0"
+
+babel-plugin-js-logger@^1.0.17:
+  version "1.0.17"
+  resolved "https://registry.yarnpkg.com/babel-plugin-js-logger/-/babel-plugin-js-logger-1.0.17.tgz#56d2ec6ab1de4593a1923b3a79fcc160ed0e21c4"
+  integrity sha1-VtLsarHeRZOhkjs6efzBYO0OIcQ=
 
 babel-plugin-macros@^2.8.0:
   version "2.8.0"
@@ -3349,7 +3361,7 @@ flush-write-stream@^1.0.0:
     inherits "^2.0.3"
     readable-stream "^2.3.6"
 
-follow-redirects@^1.0.0:
+follow-redirects@^1.0.0, follow-redirects@^1.10.0:
   version "1.14.2"
   resolved "https://registry.yarnpkg.com/follow-redirects/-/follow-redirects-1.14.2.tgz#cecb825047c00f5e66b142f90fed4f515dec789b"
   integrity sha512-yLR6WaE2lbF0x4K2qE2p9PEXKLDjUjnR/xmjS3wHAYxtlsI9MLLBJUZirAHKzUZDGLxje7w/cXR49WOUo4rbsA==
@@ -4290,6 +4302,11 @@ jest-worker@^26.5.0:
     "@types/node" "*"
     merge-stream "^2.0.0"
     supports-color "^7.0.0"
+
+js-logger@^1.6.1:
+  version "1.6.1"
+  resolved "https://registry.yarnpkg.com/js-logger/-/js-logger-1.6.1.tgz#8f09671b515e4a6f31dced8fdb8923432e2c60af"
+  integrity sha512-yTgMCPXVjhmg28CuUH8CKjU+cIKL/G+zTu4Fn4lQxs8mRFH/03QTNvEFngcxfg/gRDiQAOoyCKmMTOm9ayOzXA==
 
 "js-tokens@^3.0.0 || ^4.0.0", js-tokens@^4.0.0:
   version "4.0.0"
