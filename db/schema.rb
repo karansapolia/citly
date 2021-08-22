@@ -17,8 +17,8 @@ ActiveRecord::Schema.define(version: 2021_08_22_092539) do
   create_table "links", force: :cascade do |t|
     t.string "original", null: false
     t.string "shortened"
-    t.integer "clicks"
-    t.boolean "pinned"
+    t.integer "clicks", default: 0
+    t.boolean "pinned", default: false
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
   end

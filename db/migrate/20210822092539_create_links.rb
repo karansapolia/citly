@@ -5,8 +5,8 @@ class CreateLinks < ActiveRecord::Migration[6.1]
     create_table :links do |t|
       t.string :original, null: false
       t.string :shortened
-      t.integer :clicks
-      t.boolean :pinned
+      t.integer :clicks, default: 0
+      t.boolean :pinned, default: false
 
       t.timestamps
     end

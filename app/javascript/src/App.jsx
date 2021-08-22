@@ -1,18 +1,27 @@
 import React, { useState, useEffect } from "react";
-import { setAuthHeaders } from "./apis/axios";
+import { ToastContainer } from "react-toastify";
+
+import { setAuthHeaders, registerIntercepts } from "./apis/axios";
 import { initializeLogger } from "./common/logger";
+import Dashboard from "./components/Dashboard";
 
 const App = () => {
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
     initializeLogger();
+    registerIntercepts();
     setAuthHeaders(setLoading);
     logger.info("Never use console.log");
     // logger.error("Never use console.error");
   });
 
-  return <div>App.jsx</div>;
+  return (
+    <>
+      <ToastContainer />
+      <Dashboard />
+    </>
+  );
 };
 
 export default App;

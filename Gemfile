@@ -34,6 +34,8 @@ group :development, :test do
   # for code formatting and linting
   gem "rubocop"
   gem "rubocop-rails"
+  # add pry to debug
+  gem "pry", "~> 0.13.1"
 end
 
 group :development do
