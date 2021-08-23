@@ -1,10 +1,12 @@
 # frozen_string_literal: true
 
+require "uri"
+require_dependency "../validators/http_url_validator.rb"
+
 class Link < ApplicationRecord
-  validates :original, presence: true, format: URI::regexp(%w[http https])
+  validates :original, presence: true, http_url: true
   validates_uniqueness_of :shortened
-  validates_length_of :original, within: 3..255, on: :create, message: "URL too long"
-  validates_length_of :shortened, within: 3..255, on: :create, message: "Shortened link too long"
+  validates_length_of :original, within: 10..255, on: :create, too_short: "URL too short", too_long: "URL too long"
 
   before_validation :generate_shortened_url
 
