@@ -1,6 +1,5 @@
 import React from "react";
 
-// import API from "../../utils/UrlShortener";
 import linksApi from "apis/links";
 
 const LinkCard = ({ updateLinks, setLoading, link, loading }) => {

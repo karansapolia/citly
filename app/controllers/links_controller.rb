@@ -33,7 +33,7 @@ class LinksController < ApplicationController
     if link.update(link_params)
       render status: :ok, json: { link: link }
     else
-      render status: :unprocessable_entity, json: { errors: poll.errors.full_messages.to_sentence }
+      render status: :unprocessable_entity, json: { errors: link.errors.full_messages.to_sentence }
     end
   end
 

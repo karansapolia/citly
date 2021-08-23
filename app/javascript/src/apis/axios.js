@@ -21,6 +21,7 @@ const handleSuccessResponse = response => {
       Toastr.success(response.data.notice);
     }
   }
+  return response;
 };
 
 const handleErrorResponse = error => {
@@ -31,6 +32,7 @@ const handleErrorResponse = error => {
       error.notice ||
       "Something went wrong!"
   );
+  return Promise.reject(error);
 };
 
 export const registerIntercepts = () => {
