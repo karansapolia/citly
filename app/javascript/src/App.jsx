@@ -12,8 +12,6 @@ const App = () => {
     initializeLogger();
     registerIntercepts();
     setAuthHeaders(setLoading);
-    logger.info("Never use console.log");
-    // logger.error("Never use console.error");
   });
 
   return (
