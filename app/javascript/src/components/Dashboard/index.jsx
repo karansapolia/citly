@@ -65,20 +65,14 @@ const Dashboard = () => {
     );
   }
 
-  if (either(isNil, isEmpty)(links)) {
-    return (
-      <Container>
-        <h1 className="text-xl leading-5 text-center">
-          No links created yet 😔
-        </h1>
-      </Container>
-    );
-  }
-
   return (
     <Container>
       <Form loading={loading} setLoading={setLoading} addLink={addLink} />
-      {links && (
+      {either(isNil, isEmpty)(links) ? (
+        <h1 className="text-xl leading-5 text-center">
+          No links created yet 😔
+        </h1>
+      ) : (
         <LinksList
           links={links}
           setLoading={setLoading}
