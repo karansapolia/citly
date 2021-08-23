@@ -12,7 +12,7 @@ const App = () => {
     initializeLogger();
     registerIntercepts();
     setAuthHeaders(setLoading);
-  });
+  }, []);
 
   return (
     <>
