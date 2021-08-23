@@ -11,8 +11,6 @@ export const setAuthHeaders = (setLoading = () => null) => {
       .querySelector('[name="csrf-token"]')
       .getAttribute("content")
   };
-  const token = localStorage.getItem("authToken");
-  const email = localStorage.getItem("authEmail");
   setLoading(false);
 };
 
@@ -23,7 +21,6 @@ const handleSuccessResponse = response => {
       Toastr.success(response.data.notice);
     }
   }
-  return response;
 };
 
 const handleErrorResponse = error => {
@@ -34,7 +31,6 @@ const handleErrorResponse = error => {
       error.notice ||
       "Something went wrong!"
   );
-  return Promise.reject(error);
 };
 
 export const registerIntercepts = () => {

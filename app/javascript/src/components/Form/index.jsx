@@ -14,7 +14,6 @@ const Form = ({ loading, addLink, setLoading }) => {
         link: { original: link }
       });
       if (res.data.notice) {
-        logger.info("new link: ", res.data.link);
         addLink(res.data.link);
         setLink("");
       }
